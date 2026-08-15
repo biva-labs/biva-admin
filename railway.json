@@ -1,0 +1,10 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "dockerfilePath": "server/Dockerfile",
+    "context": "server"
+  },
+  "deploy": {
+    "startCommand": "bun run index.ts"
+  }
+}
