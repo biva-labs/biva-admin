@@ -3,8 +3,5 @@
   "build": {
     "dockerfilePath": "Dockerfile",
     "context": "."
-  },
-  "deploy": {
-    "startCommand": "nginx -g daemon off;"
   }
 }
