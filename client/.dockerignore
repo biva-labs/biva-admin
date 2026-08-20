@@ -1,0 +1,17 @@
+node_modules
+bun.lockb
+.git
+.gitignore
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+coverage
+dist
+*.md
+logs
+*.log
+.idea
+.vscode
+.DS_Store
