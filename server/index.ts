@@ -17,8 +17,8 @@ import getTickets from "./utils/get-tickets";
 const app = new Hono();
 app.use(
   cors({
-    origin: "https://biva-admin.onrender.com",
-    // https://biva-admin.onrender.com
+    origin: "https://biva-admin-production.up.railway.app",
+    // https://biva-admin-production.up.railway.app
     credentials: true,
     allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allowHeaders: ["Content-Type", "Authorization"],

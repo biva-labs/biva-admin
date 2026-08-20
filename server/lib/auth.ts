@@ -37,8 +37,8 @@ export const auth = betterAuth({
       },
     },
   },
-  trustedOrigins: ["https://biva-admin.onrender.com"],
-  //https://biva-admin.onrender.com
+  trustedOrigins: ["https://biva-admin-production.up.railway.app"],
+  //https://biva-admin-production.up.railway.app
   session: {
     cookieCache: {
       enabled: true,
