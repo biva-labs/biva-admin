@@ -26,7 +26,7 @@ app.use(
 );
 
 app.on(["POST", "GET"], "/api/auth/*", (c) => auth.handler(c.req.raw));
-// app.route("/dev", adminSignupRouter);
+app.route("/dev", adminSignupRouter);
 app.route("/admin", adminRouter);
 app.get("/get-media/:folder", getImage);
 app.route("/get-bookings", getBookingsRouter);
