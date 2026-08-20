@@ -11,8 +11,9 @@ FROM oven/bun:1 AS runtime
 WORKDIR /app
 
 # Create non-root user for security
-RUN addgroup -g 1001 -S appgroup && \
-    adduser -u 1001 -S appuser -G appgroup
+
+RUN groupadd -g 1001 appgroup && \
+    useradd -u 1001 -g appgroup -s /bin/bash -m appuser
 USER appuser
 
 # Environment (non-sensitive config only)
